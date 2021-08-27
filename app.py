@@ -7,5 +7,5 @@ app = Flask(__name__)
 def test_request():
     return "สวัสดีๆๆๆ"
 
-
-app.run()
+if __name__ == '__main__':
+    app.run()
