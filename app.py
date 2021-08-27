@@ -8,5 +8,4 @@ def test_request():
     return "สวัสดีๆๆๆ"
 
 
-if __name__ == '__main__':
-    app.run()
+app.run()
