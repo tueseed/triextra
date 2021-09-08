@@ -39,7 +39,7 @@ def align_trim_data(orig_df):
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = JupyterDash(__name__, external_stylesheets=external_stylesheets)
 #app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-
+server = app.server
 # สร้างข้อมูล
 df = import_data('Southern area', 'Large house', 'Feb', '2564')
 hr_df = align_trim_data(df)
@@ -76,4 +76,4 @@ app.layout = html.Div(children=[
 ])
 
 if __name__ == '__main__':
-    app.run()
+    app.run_server(debug=True)
